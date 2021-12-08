@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import BoxProject from './pages/BoxProject';
+import styled from 'styled-components'
+
+const AppStyled =styled.div`
+  width: 80%;
+  min-width: 350px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border : 1px solid #000;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppStyled>
+      <BoxProject />
+    </AppStyled>
   );
 }
 
