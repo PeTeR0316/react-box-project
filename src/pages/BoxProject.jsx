@@ -104,7 +104,11 @@ const BoxProject = () => {
                 </div>
             </div>
 
-            <BoxArea resetBox={resetBoxArray} colorBox={changeBoxArray} />
+            <BoxArea 
+                resetBox={resetBoxArray} 
+                colorBox={changeBoxArray} 
+                find={findBlock}
+            />
         </BoxProjectStyled>
     );
 };
